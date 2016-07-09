@@ -78,7 +78,7 @@ int min_Teta(int m,double *Teta)
      return num;
 }
 
-double * symplex_iter(double **alpha_matrix,double *C,double *b,int n,int m)
+/*double * symplex_iter(double **alpha_matrix,double *C,double *b,int n,int m)
 {
 	double **alpha_matrix_copy;
 	double *b_copy,*Cb,*delta,*Teta,*x0;
@@ -167,3 +167,4 @@ double * symplex_iter(double **alpha_matrix,double *C,double *b,int n,int m)
     }
     return 0;
 }
+*/

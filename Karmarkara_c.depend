@@ -88,3 +88,41 @@
 	"multi_cost_h.h"
 	<malloc.h>
 
+1468065474 source:d:\doubledt\linear_alg_operation.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"multi_cost_h.h"
+
+1468069160 d:\doubledt\multi_cost_h.h
+	<malloc.h>
+
+1468065474 source:d:\doubledt\lu_transformation.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"multi_cost_h.h"
+	<malloc.h>
+
+1468066068 source:d:\doubledt\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	"multi_cost_h.h"
+	<malloc.h>
+
+1468069160 source:d:\doubledt\karmarkara_function.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"multi_cost_h.h"
+
+1468069177 source:d:\doubledt\symplex_method.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	"multi_cost_h.h"
+	<malloc.h>
+

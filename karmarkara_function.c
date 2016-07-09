@@ -19,7 +19,7 @@ double min_val_hv(const double * hv,const double *v,int m)
 	return min;
 }
 
-int karmarkar_iteration(double **a,double *b,double *c,double *x,int m,int n,double gamma)
+int karmarkar_iteration(double **a,double *b,double *c,double *x,int m,int n,double gamma, double eps)
 {
 	double * current_vec;
 	double **Dv;
@@ -34,7 +34,7 @@ int karmarkar_iteration(double **a,double *b,double *c,double *x,int m,int n,dou
 	{
 		Dv[i] = (double *) malloc(m*sizeof(double));
 	}
-	//while()
+	while(1)
     {
     	current_vec = matrxvec(a,x,m,n);
         for (int i=0;i<m;i++)
@@ -67,5 +67,13 @@ int karmarkar_iteration(double **a,double *b,double *c,double *x,int m,int n,dou
         {
             x0[i]+=alpha*hx[i];
         }
+        //check for optimality
+        double optimum_criterion = 0;
+        for(int i=0; i<m; i++)
+        {
+            optimum_criterion+=x0[i]*c[i];
+        }
+        if(optimum_criterion<eps)
+            break;
     }
 }
